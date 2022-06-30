@@ -1,13 +1,747 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-  </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <title>ws-test</title>
+</head>
+<body>
+
+  <div class="home-screen">
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav__logo"></div>
+          <div class="nav__items">
+            <div class="nav__items-links">
+              <div class="nav__items-links__item">Inventory</div>
+              <div class="nav__items-links__item">Financing</div>
+              <div class="nav__items-links__item">Contacts</div>
+            </div>
+            <div class="nav__items-facebook"></div>
+            <div class="nav__items-instagram"></div>
+          </div>
+        </nav>
+     </header>
+
+      <h1 class="home-screen__title">The right way to get a car</h1>
+      <div class="home-screen__subtitles">
+        <div class="home-screen__subtitles--first">
+          Monza Motorsports is a boutique-style dealership specializing in premium imports. We offer an advanced online vehicle purchasing experience with integrated financing and contactless home delivery.
+        </div>
+        <div class="home-screen__subtitles--second">
+          All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza Motorsports
+          has been the benchmark for innovation in the automotive industry.
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary home-screen--button">Browse cars</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="current-offers">
+
+      <div class="current-offers__title">
+        CURRENT OFFERS
+      </div>
+
+      <div class="current-offers__filter">
+        <div class="filter-selects">
+          <select class="form-select filter-selects__select" aria-label="Default select example">
+            <option selected>Year</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <select class="form-select filter-selects__select" aria-label="Default select example">
+            <option selected>Make</option>
+            <option value="1">Honda</option>
+            <option value="2">Kia</option>
+            <option value="3">Toyota</option>
+            <option value="4">Volkswagen</option>
+            <option value="5">Toyota</option>
+            <option value="6">Volkswagen</option>
+            <option value="7">Honda</option>
+          </select>
+          <select class="form-select filter-selects__select" aria-label="Default select example">
+            <option selected>Model</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <select class="form-select filter-selects__select" aria-label="Default select example">
+            <option selected>Trim</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <select class="form-select filter-selects__select" aria-label="Default select example">
+            <option selected>Mileage</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <button type="button" class="btn btn-success filter-selects__accept-btn">40 cars</button>
+        </div>
+
+        <div class="sort-vehicles">
+          <div class="sort-vehicles__available">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Instantly available vehicles
+              </label>
+            </div>
+          </div>
+
+          <div class="sort-vehicles__by">
+            <div class="sort-vehicles__by__title">Sort By</div>
+            <select class="form-select sort-vehicles__by__select" aria-label="Default select example">
+              <option selected>Public date (ascending)</option>
+              <option value="1">Public date (descending)</option>
+              <option value="2">Price (ascending)</option>
+              <option value="3">Price (descending)</option>
+              <option value="3">Mileage (ascending)</option>
+              <option value="3">Mileage (descending)</option>
+              <option value="3">Performance (ascending)</option>
+              <option value="3">Performance (descending)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cars-cards">
+          <div class="card">
+            <img class="card__image" src="images/cars/volkswagen-tiguan2019.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2019
+              </span>
+              <span class="card__title__car-name">Volkswagen Tiguan</span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                19,855 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Diesel
+              </div>
+            </div>
+            <div class="card__price">
+              $34,888
+            </div>
+          </div>
+          <div class="card card--new">
+            <img class="card__image" src="images/cars/toyota-highlander-xle2014.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2014
+              </span>
+              <span class="card__title__car-name">Toyota Highlander XLE</span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                69,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $27,875
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/lexus-rx350-luxury2017.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2017
+              </span>
+              <span class="card__title__car-name">
+                Lexus RX 350 LUXURY
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                39,850 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $38,775
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/toyota-highlander-le2016.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2016
+              </span>
+              <span class="card__title__car-name">
+                Toyota Highlander LE A...
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                104,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $23,728
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/hyundai-elantra2017.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2017
+              </span>
+              <span class="card__title__car-name">
+                Hyundai Elantra
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                95,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $11,788
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/mercedes-benz-gle-cl2016.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2016
+              </span>
+              <span class="card__title__car-name">
+                Mercedes-Benz GLE-Cl...
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                59,800 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Diesel
+              </div>
+            </div>
+            <div class="card__price">
+              $38,878
+            </div>
+          </div>
+          <div class="card card--sold">
+            <img class="card__image" src="images/cars/toyota-venza-awd-xle2015sold.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2015
+              </span>
+              <span class="card__title__car-name">
+                Toyota Venza AWD XLE...
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                99,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $18,620
+            </div>
+          </div>
+          <div class="card card--new">
+            <img class="card__image" src="images/cars/lexus-rx-350-f-sport2016.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2016
+              </span>
+              <span class="card__title__car-name">
+                Lexus RX 350 F-SPORT
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                86,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $34,888
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/volkswagen-tiguan2019.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2019
+              </span>
+              <span class="card__title__car-name">
+                Volkswagen Tiguan
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                19,855 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Diesel
+              </div>
+            </div>
+            <div class="card__price">
+              $34,888
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/toyota-highlander-xle2014.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2014
+              </span>
+              <span class="card__title__car-name">
+                Toyota Highlander XLE
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                69,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $27,875
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/lexus-rx350-luxury2017.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2017
+              </span>
+              <span class="card__title__car-name">
+                Lexus RX 350 LUXURY
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                39,850 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $38,775
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/toyota-highlander-le2016.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2016
+              </span>
+              <span class="card__title__car-name">
+                Toyota Highlander LE A...
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                104,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $23,728
+            </div>
+          </div>
+          <div class="card card--new">
+            <img class="card__image" src="images/cars/volkswagen-tiguan2019.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2019
+              </span>
+              <span class="card__title__car-name">
+                Volkswagen Tiguan
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                19,855 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Diesel
+              </div>
+            </div>
+            <div class="card__price">
+              $34,888
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/toyota-highlander-xle2014.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2014
+              </span>
+              <span class="card__title__car-name">
+                Toyota Highlander XLE
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                69,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $27,875
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/lexus-rx350-luxury2017.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2017
+              </span>
+              <span class="card__title__car-name">
+                Lexus RX 350 LUXURY
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                39,850 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $38,775
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/toyota-highlander-le2016.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2016
+              </span>
+              <span class="card__title__car-name">
+                Toyota Highlander LE A...
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                104,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $23,728
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/hyundai-elantra2017.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2017
+              </span>
+              <span class="card__title__car-name">
+                Hyundai Elantra
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                95,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $11,788
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/mercedes-benz-gle-cl2016.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2016
+              </span>
+              <span class="card__title__car-name">
+                Mercedes-Benz GLE-Cl...
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                59,800 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Diesel
+              </div>
+            </div>
+            <div class="card__price">
+              $38,878
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/toyota-venza-awd-xle2015.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2015
+              </span>
+              <span class="card__title__car-name">
+                Toyota Venza AWD XLE...
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                99,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $18,620
+            </div>
+          </div>
+          <div class="card card--new">
+            <img class="card__image" src="images/cars/lexus-rx-350-f-sport2016.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2016
+              </span>
+              <span class="card__title__car-name">
+                Lexus RX 350 F-SPORT
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                86,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $34,888
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/volkswagen-tiguan2019.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2019
+              </span>
+              <span class="card__title__car-name">
+                Volkswagen Tiguan
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                19,855 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Diesel
+              </div>
+            </div>
+            <div class="card__price">
+              $34,888
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="images/cars/toyota-highlander-xle2014.png" alt="car">
+            <div class="card__title">
+              <span class="card__title__year">
+                2014
+              </span>
+              <span class="card__title__car-name">
+                Toyota Highlander XLE
+              </span>
+            </div>
+            <div class="card__description">
+              <div class="card__description__km">
+                69,000 km
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__transmission">
+                Automatic
+              </div>
+              <div class="card__description__vertical-line"></div>
+              <div class="card__description__fuel">
+                Gas
+              </div>
+            </div>
+            <div class="card__price">
+              $27,875
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subscribe__background">
+    <div class="container">
+      <div class="subscribe">
+        <div class="subscribe__left">
+          <div class="subscribe__left__title">
+            Haven't found a suitable vehicle?
+          </div>
+          <div class="subscribe__left__subtitle">
+            Sign up for our newsletter and be the first to know when we publish new vehicle offers.
+          </div>
+        </div>
+        <form class="subscribe__right" action="#">
+          <label class="form-label subscribe__right__input-label" for="exampleInputEmail1">
+            <input placeholder="Enter your email" type="email" class="form-control subscribe__right__input" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </label>
+          <div class="subscribe__right__button">
+            <button type="submit" class="btn btn-primary subscribe--button">
+              Subscribe now
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="script/main.js"></script>
+</body>
 </html>

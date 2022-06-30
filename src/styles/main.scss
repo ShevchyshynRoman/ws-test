@@ -1,7 +1,15 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+* {
+  box-sizing: border-box;
+}
+
+@import "utils/vars";
+@import "utils/reset";
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/current-offers";
+@import "blocks/subscribe";
 
 body {
-  background: $c-gray;
+  background-color: $background-color;
 }
