@@ -18,3 +18,53 @@
     margin-top: 80px;
   }
 }
+
+.accordion-button {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+
+  color: #000;
+  &:focus {
+    border-color: none !important;
+  }
+  &:active {
+    border: none !important;
+  }
+  &::after {
+    width: 11px !important;
+    height: 11px !important;
+    background-image: url("../images/add-1.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+
+  &:not(.collapsed) {
+    font-family: "Noto Sans", sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    line-height: 23px !important;
+
+    color: #df4e3c !important;
+
+    &::after {
+      background-image: url("../images/add-3.png") !important;
+    }
+  }
+}
+
+.accordion {
+  --bs-accordion-active-color: none !important;
+  --bs-accordion-active-bg: none !important;
+  --bs-accordion-btn-focus-border-color: none !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+
+  &-body {
+    &__item {
+      margin-right: 72px;
+    }
+  }
+}
