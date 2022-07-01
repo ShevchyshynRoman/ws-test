@@ -1,0 +1,16 @@
+.popular-questions {
+  &__title {
+    margin-top: 100px;
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+
+    text-transform: uppercase;
+
+    color: $h2-option-color;
+  }
+}
