@@ -1,0 +1,54 @@
+.footer {
+  &__content {
+    height: 121px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  background-color: #000;
+
+  margin-top: 150px;
+
+  &__logo {
+    &-image {
+      width: 191px;
+      height: 48px;
+    }
+  }
+  &__links {
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+
+    &-item {
+      color: #f8f8f8;
+      text-decoration: none;
+
+      &:hover {
+        color: #f8f8f8;
+        text-decoration: underline;
+      }
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+
+  }
+  &__social-links {
+    &-facebook {
+      cursor: pointer;
+      width: 9px;
+      height: 19px;
+
+      margin-right: 31px;
+    }
+    &-instagram {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
