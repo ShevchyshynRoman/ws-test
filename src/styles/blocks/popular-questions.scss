@@ -58,11 +58,12 @@
 
 .accordion {
   --bs-accordion-active-color: none !important;
-  --bs-accordion-active-bg: none !important;
+  --bs-accordion-active-bg: #fff !important;
   --bs-accordion-btn-focus-border-color: none !important;
   --bs-accordion-btn-focus-box-shadow: none !important;
 
   &-body {
+
     &__item {
       margin-right: 72px;
     }
