@@ -28,10 +28,7 @@ const select = function() {
 
 select();
 
-function resetForm() {
-  document.getElementById('exampleInputEmail1').reset();
-}
-
-const subscribeButton = document.getElementById('subscribe-button');
-
-subscribeButton.addEventListener('click', resetForm);
+document.addEventListener('submit', (e) => {
+  e.preventDefault();
+  e.target.reset();
+});
